@@ -7,11 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-   <h2>home</h2>
-   <a href ="/test">test</a>
-   <hr>
-   <a href ="/Menus/List">메뉴 목록</a><br>
-   <a href ="/Menus/WriteForm">새 메뉴 추가</a><br>
-   
+	<h2>메뉴 목록</h2>
 </body>
 </html>
