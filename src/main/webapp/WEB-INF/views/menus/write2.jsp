@@ -26,19 +26,11 @@
 <body>
 	<main>
 		<h2>새 메뉴 추가</h2>
-		<form action ="/Menus/Write" method="POST">
+		<form action ="/Menus/write2" method="POST">
 			<table>
-				<tr>
-					<td>메뉴 아이디:</td>
-					<td><input type = "text" name ="menu_id" placeholder = "아이디" Maxlength = "6"/> </td>
-				</tr>
 				<tr>
 					<td>메뉴 이름:</td>
 					<td><input type = "text" name ="menu_name" placeholder = "이름"/> </td>
-				</tr>
-				<tr>
-					<td>메뉴 순서:</td>
-					<td><input type = "text" name ="menu_seq" placeholder = "순서"/> </td>
 				</tr>
 				<tr>
 					<td colspan = "2"><input type = "submit" value = "등록"/> </td>
@@ -51,29 +43,15 @@
 	const formEl = document.querySelector("form");//form태그 찾기
 	
 		formEl.addEventListener('submit',function(e){ // submit 이벤트발생 
-			//alert('ok')
-			const inputEl1 =document.querySelector('[name ="menu_id"]');
+		
+			const inputEl1 =document.querySelector('[name ="menu_name"]');
 			if(inputEl1.value.trim() == ''){
-				alert('메뉴아이디가 입력되지 않았습니다.')
-				e.stopPropagation();//이벤트 버블링 방지
-				e.preventDefault();//이벤트를 취소
-				inputEl1.focus();
-				return false;
-			}
-			const inputEl2 =document.querySelector('[name ="menu_name"]');
-			if(inputEl2.value.trim() == ''){
 				alert('메뉴이름이 입력되지 않았습니다.')
 				e.stopPropagation();
 				e.preventDefault();				
 				return false;
 			}
-			const inputEl3 =document.querySelector('[name ="menu_seq"]');
-			if(inputEl3.value.trim() == ''){
-				alert('메뉴번호가 입력되지 않았습니다.')
-				e.stopPropagation();
-				e.preventDefault();				
-				return false;	
-			}
+			
 		})
 </script>	
 	

@@ -18,6 +18,7 @@
    <hr>
    <a href ="/Menus/List">메뉴 목록</a><br>
    <a href ="/Menus/WriteForm">새 메뉴 추가</a><br>
+   <a href ="/Menus/WriteForm2">새 메뉴 추가2</a>
 </main>   
 </body>
 </html>
